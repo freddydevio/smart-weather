@@ -27,6 +27,8 @@
                 console.log(weather.forecast);
                 $('.smart-weather .weather-icon').html('<i class="wi ' + weatherIcon + '"></i>');
 
+                $('.smart-weather .forecast-container').html("");
+
                 let count = 0;
                 weather.forecast.forEach(function (item) {
                     if (count < config.maxForecasts) {

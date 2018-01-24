@@ -8,8 +8,6 @@
     //read config
     let config = System.moduleConfig('smart-weather');
 
-    console.log(config);
-
     //600000 ms are 10 minutes
     setInterval(function () {
         collectWeatherData();
@@ -24,7 +22,6 @@
                 $('.smart-weather .current-position').html(weather.city + ' ' + weather.region);
 
                 let weatherIcon = code2Icon(weather.code);
-                console.log(weather.forecast);
                 $('.smart-weather .weather-icon').html('<i class="wi ' + weatherIcon + '"></i>');
 
                 $('.smart-weather .forecast-container').html("");

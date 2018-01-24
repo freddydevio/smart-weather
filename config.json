@@ -1,3 +1,4 @@
 {
-  "maxForecasts": 5
+  "maxForecasts": 5,
+  "refreshTime": 600
 }

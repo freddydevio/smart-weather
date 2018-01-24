@@ -11,7 +11,7 @@
     //600000 ms are 10 minutes
     setInterval(function () {
         collectWeatherData();
-    }, 600000);
+    }, config.refreshTime * 1000);
 
     function collectWeatherData() {
         $.simpleWeather({
